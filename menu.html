@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Yongco's Cafe</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .menu-section {
+            padding: 100px 0;
+        }
+        
+        .menu-category {
+            margin-bottom: 50px;
+        }
+        
+        .menu-item {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .menu-item img {
+            width: 100%;
+            height: 300px;  /* Increased height */
+            object-fit: contain;  /* Changed to contain to show full image */
+            border-radius: 8px;
+            background: #f8f9fa;
+            padding: 10px;
+        }
+        
+        .menu-category {
+            margin-bottom: 70px;  /* Increased spacing between categories */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Yongco's Cafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h1 class="text-center mb-5">Our Menu</h1>
+            
+            <!-- Coffee Section -->
+            <div class="menu-category">
+                <h2 class="mb-4">Coffee</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <img src="espresso-removebg-preview.png" alt="Espresso">
+                        <h4 class="mt-3">Espresso</h4>
+                        <p class="text-muted">Pure coffee perfection</p>
+                        <p class="price">₱120</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="Caffe_Latte_at_Pulse_Cafe-removebg-preview.png" alt="Caffe Latte">
+                        <h4 class="mt-3">Caffe Latte</h4>
+                        <p class="text-muted">Espresso with steamed milk</p>
+                        <p class="price">₱150</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb-removebg-preview.png" alt="Cappuccino">
+                        <h4 class="mt-3">Cappuccino</h4>
+                        <p class="text-muted">Equal parts espresso, steamed milk, and foam</p>
+                        <p class="price">₱140</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Non-Coffee Section -->
+            <div class="menu-category">
+                <h2 class="mb-4">Non-Coffee Drinks</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <img src="leaf-plate-wood-object-healthy-eating-removebg-preview.png" alt="Green Tea">
+                        <h4 class="mt-3">Green Tea</h4>
+                        <p class="text-muted">Fresh and soothing</p>
+                        <p class="price">₱100</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="Hot-Chocolate-3-removebg-preview.png" alt="Hot Chocolate">
+                        <h4 class="mt-3">Hot Chocolate</h4>
+                        <p class="text-muted">Rich and creamy</p>
+                        <p class="price">₱130</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="Fruit-Smoothie-Recipe-A_FFF_Fruit_Smoothie_Feature_2-removebg-preview.png" alt="Fruit Smoothie">
+                        <h4 class="mt-3">Fruit Smoothie</h4>
+                        <p class="text-muted">Fresh fruits blended to perfection</p>
+                        <p class="price">₱160</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pastries Section -->
+            <div class="menu-category">
+                <h2 class="mb-4">Pastries</h2>
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <img src="image-749238-1738604822-removebg-preview.png" alt="Croissant">
+                        <h4 class="mt-3">Butter Croissant</h4>
+                        <p class="text-muted">Freshly baked daily</p>
+                        <p class="price">₱80</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="jumbo-blueberry-muffins-with-sour-cream-1x1-1-removebg-preview.png" alt="Muffin">
+                        <h4 class="mt-3">Blueberry Muffin</h4>
+                        <p class="text-muted">Packed with fresh blueberries</p>
+                        <p class="price">₱90</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="BBAGFCheesecake053SWS-1-scaled-removebg-preview.png" alt="Cheesecake">
+                        <h4 class="mt-3">Classic Cheesecake</h4>
+                        <p class="text-muted">Rich and creamy</p>
+                        <p class="price">₱150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Yongco's Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
